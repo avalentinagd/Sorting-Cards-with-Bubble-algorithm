@@ -22,5 +22,6 @@ window.onload = function() {
   if (simbol[rsimbol] == "&hearts;" || simbol[rsimbol] == "&diams;") {
     y.style.color = "red";
     z.style.color = "red";
+    x.style.color = "red";
   }
 };
