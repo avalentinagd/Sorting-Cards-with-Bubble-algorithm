@@ -13,23 +13,43 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
 
-  <body class="container-fluid justify-content-center my-5">
-    <div class="row justify-content-center">
-      <div class="col-3 mx-auto">
+  <body class="container-fluid my-5">
+    <div class="row">
+      <div class="col-1">
+        <p class="ml-3 mr-3">Original:</p>
+      </div>
+      <div class="col-3">
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          placeholder="Quantity"
+        />
+      </div>
+      <div class="col-2">
+        <button onclick="drawCard()" type="button" id="draw" name="draw">
+          Draw
+        </button>
+        <button type="button" id="sort" name="sort">Sort</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-start my-5">
+      <div class="col-1">
         <div class="container rounded-lg" id="cart">
           <div class="row">
-            <div class="col-12"><p id="up">&hearts;</p></div>
+            <div class="col-12 pt-0 pb-0 mt-0"><p id="up">&hearts;</p></div>
           </div>
 
           <div class="row">
-            <div class="col-12 d-flex justify-content-center">
+            <div class="col-12 pt-0 pb-0 d-flex justify-content-center">
               <p id="middle">J</p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12 d-flex justify-content-end">
-              <p id="down">&hearts;</p>
+            <div class="col-12 d-flex justify-content-end py-0">
+              <p id="down" class="mt-1">&hearts;</p>
             </div>
           </div>
         </div>

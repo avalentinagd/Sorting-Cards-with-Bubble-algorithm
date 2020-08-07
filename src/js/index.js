@@ -25,3 +25,8 @@ window.onload = function() {
     x.style.color = "red";
   }
 };
+
+window.drawCard = function drawCard() {
+  let quantityCard = document.querySelector("#quantity").value;
+  alert(quantityCard);
+};
